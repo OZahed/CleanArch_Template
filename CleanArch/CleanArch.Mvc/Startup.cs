@@ -26,6 +26,13 @@ namespace CleanArch.Mvc
 
         public IConfiguration Configuration { get; }
 
+
+        // hook the dependency Container Into The presentation Layer
+        private static void RegisterServices(IServiceCollection services)
+        {
+            DependencyContainer.RegisterServices(services);
+        }
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -78,10 +85,6 @@ namespace CleanArch.Mvc
             });
         }
 
-        // hook the dependency Container Into The presentation Layer
-        private static void RegisterServices(IServiceCollection services)
-        {
-            DependencyContainer.RegisterServices(services);
-        }
+        
     }
 }

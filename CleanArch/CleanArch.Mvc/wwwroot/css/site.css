@@ -24,6 +24,34 @@ a {
   border-color: #1861ac;
 }
 
+
+/* Course Page Style
+-------------------------------------------------- */
+.course-content{
+    padding:1.2em;
+}
+
+.course-image-container{
+    padding: 0.5em;
+    background-color: #fff;
+    border-radius: 2px;
+    display:inline-block;
+    height: 250px;
+    width:250px;
+    margin:1rem;
+    position:relative;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.2), 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.course-image {
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height: 230px;
+    width: 230px;
+}
+
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -69,3 +97,4 @@ body {
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
 }
+
