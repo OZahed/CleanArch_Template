@@ -7,9 +7,8 @@ using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Interfaces
 {
-    interface ICourseRepository
+    public interface ICourseRepository
     {
-        // prosentation does not about the Course Entity    
         IEnumerable<Course> GetCourses();
     }
 }
