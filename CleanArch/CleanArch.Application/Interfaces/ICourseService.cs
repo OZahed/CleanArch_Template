@@ -11,5 +11,6 @@ namespace CleanArch.Application.Interfaces
     {
         public CourseViewModel GetCourses();
 
+        void CreateCourse(CourseViewModel courseVewModel);
     }
 }
