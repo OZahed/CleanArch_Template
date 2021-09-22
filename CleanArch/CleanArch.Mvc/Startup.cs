@@ -1,6 +1,7 @@
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
 using CleanArch.Mvc.Data;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -50,6 +51,9 @@ namespace CleanArch.Mvc
             });
             services.AddControllersWithViews();
 
+
+            // Adding mediatR to services
+            services.AddMediatR(typeof(Startup));
             // Invoking the Register Services to Infra.IoC
             RegisterServices(services);
         }
